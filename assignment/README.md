@@ -1,6 +1,6 @@
 This project uses Storybook to develop and showcase React components for a Node.js + Vite + React application
 ----------------------------------------------------------------------------------
-NSTRUCTIONS:
+INSTRUCTIONS:
 
 Clone the repository: git clone https://github.com/your-username/your-repo.git
 
