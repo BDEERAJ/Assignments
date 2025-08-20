@@ -2,7 +2,7 @@ This project uses Storybook to develop and showcase React components for a Node.
 ----------------------------------------------------------------------------------
 INSTRUCTIONS:
 
-Clone the repository: git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/BDEERAJ/Assignments.git
 
 Go into the project folder: cd your-repo
 
