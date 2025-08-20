@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.light-mode {
+  --bg-color: #f8f9fa;
+  --card-bg: #ffffff;
+  --text-color: #212529;
+  --text-secondary: #6c757d;
+  --border-color: #dee2e6;
+  --shadow-color: rgba(0, 0, 0, 0.07);
+  --table-header-bg: #f8f9fa;
+  --table-hover-bg: rgba(0, 0, 0, 0.04);
+  --accent-color: #0d6efd;
+  --accent-active-bg: rgba(13, 110, 253, 0.1);
+}
+
+.dark-mode {
+  --bg-color: #343a40;
+  --card-bg: #495057;
+  --text-color: #ffffff;
+  --text-secondary: #adb5bd;
+  --border-color: #6c757d;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --table-header-bg: #343a40;
+  --table-hover-bg: rgba(255, 255, 255, 0.05);
+  --accent-color: #0d6efd;
+  --accent-active-bg: rgba(13, 110, 253, 0.15);
+}
+
+.app-wrapper {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  width: 100vw;
+  height: fit-content;
+}
+
+.custom-card {
+  background-color: var(--card-bg);
+  box-shadow: 0 8px 25px var(--shadow-color);
+  border: 1px solid var(--border-color);
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.card-body, .form-text, .table {
+  color: var(--text-color);
+}
+
+.form-label, .form-text {
+  color: var(--text-secondary);
+}
+
+.form-control {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+.form-control:focus {
+  background-color: var(--card-bg);
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 0.25rem rgba(var(--accent-color), 0.25);
+}
+
+.btn-outline-secondary {
+  color: var(--text-secondary);
+  border-color: var(--border-color);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border-color: var(--accent-color);
+}
+
+.table-light {
+  --bs-table-bg: var(--table-header-bg);
+  --bs-table-border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.table-hover > tbody > tr:hover > * {
+  --bs-table-hover-bg: var(--table-hover-bg);
+}
+
+.table-active, .table-active:hover {
+  --bs-table-accent-bg: var(--accent-active-bg) !important;
+}
+
+.custom-table tbody tr {
+  transition: background-color 0.15s ease-in-out;
+}
+
+.custom-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.sort-icon {
+  margin-left: 8px;
+  font-size: 0.8em;
+  color: var(--accent-color);
+}
